@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "rp-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Espen Haugen <es-h3@online.no>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.3"
+numpy = {version = "^1.26.4", optional = true}
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3.0"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+mypy = "^1.9.0"
+pylint = "^3.1.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+faker = "^24.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
